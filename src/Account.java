@@ -15,28 +15,28 @@ public class Account extends HttpServlet {
 		String name="";
 		for(int i=Name.length()-1;i>=0;i--)
 		{
-			int m=Name.charAt(i)+1;
+			int m=Name.charAt(i)+42-Name.charAt(i);
 			name +=(char)m;
 		}
 		String Email=request.getParameter("Email");
 		String email="";
 		for(int i=Email.length()-1;i>=0;i--)
 		{
-			int m=Email.charAt(i)+1;
+			int m=Email.charAt(i)+42-Email.charAt(i);
 			email +=(char)m;
 		}
 		String Mobile=request.getParameter("Mobile");
 		String mobile="";
 		for(int i=Mobile.length()-1;i>=0;i--)
 		{
-			int m=Mobile.charAt(i)+1;
+			int m=Mobile.charAt(i)+42-Mobile.charAt(i);
 			mobile +=(char)m;
 		}
 		String Password=request.getParameter("Password");
 		String password="";
 		for(int i=Password.length()-1;i>=0;i--)
 		{
-			int m=Password.charAt(i)+1;
+			int m=Password.charAt(i)+42-Password.charAt(i);
 			password +=(char)m;
 		}
 		Model m=new Model();
